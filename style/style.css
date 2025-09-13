@@ -1,0 +1,1038 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Root Variables */
+:root {
+  --primary-gradient: linear-gradient(135deg, #00B4DB 0%, #0083B0 100%);
+  --secondary-gradient: linear-gradient(135deg, #2D2D2D 0%, #1E1E1E 100%);
+  --accent-color: #00B4DB;
+  --bg-dark: #1E1E1E;
+  --bg-darker: #1a202c;
+  --bg-light: #2D2D2D;
+  --text-primary: #FFFFFF;
+  --text-secondary: #E0E0E0;
+  --border-color: #3D3D3D;
+  --success-color: #4CAF50;
+  --warning-color: #FFA726;
+  --error-color: #F44336;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-darker);
+  color: #FFFFFF;
+  line-height: 1.6;
+}
+
+.stApp {
+  background: var(--bg-darker);
+  color: #FFFFFF;
+}
+
+/* Main container */
+.main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--bg-dark);
+  color: #FFFFFF;
+}
+
+/* Global Dark Theme Styles */
+body {
+  background-color: #1a202c;
+  color: #FFFFFF;
+}
+
+.stApp {
+  background: var(--bg-darker);
+}
+
+/* Sidebar Styling */
+.css-1d391kg {
+  background: linear-gradient(180deg, #2D2D2D 0%, #1E1E1E 100%);
+}
+
+.css-1d391kg .stSelectbox label {
+  color: #ffffff !important;
+}
+
+/* Card Styling */
+.stCard {
+  background: var(--bg-dark);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--border-color);
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #FFFFFF;
+}
+
+.stCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Button Styling */
+.stButton > button {
+  background: var(--primary-gradient);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.stButton > button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 180, 219, 0.4);
+}
+
+/* Input Fields - UPDATED FOR DARK BACKGROUND */
+.stTextInput > div > div {
+  background: var(--bg-light) !important;
+  border: 1px solid var(--border-color) !important;
+  color: #FFFFFF !important;
+  border-radius: 8px !important;
+  padding: 0 !important;
+}
+
+.stTextInput > div > div input {
+  background: var(--bg-light) !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  padding: 12px !important;
+}
+
+.stTextInput > div > div:focus-within {
+  border-color: var(--accent-color) !important;
+  box-shadow: 0 0 0 1px var(--accent-color) !important;
+}
+
+/* Text Area - UPDATED FOR DARK BACKGROUND */
+.stTextArea > div > div {
+  background: var(--bg-light) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px !important;
+}
+
+.stTextArea textarea {
+  background: var(--bg-light) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px !important;
+  color: #FFFFFF !important;
+  font-size: 1em !important;
+  padding: 12px !important;
+}
+
+.stTextArea textarea:focus {
+  box-shadow: 0 0 0 2px rgba(0, 180, 219, 0.3) !important;
+  border-color: var(--accent-color) !important;
+  background: var(--bg-light) !important;
+}
+
+/* Number Input - UPDATED FOR DARK BACKGROUND */
+.stNumberInput > div > div {
+  background: var(--bg-light) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px !important;
+}
+
+.stNumberInput input {
+  background: var(--bg-light) !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  padding: 12px !important;
+}
+
+/* SELECT BOX AND DROPDOWN STYLING - ENHANCED FOR DARK THEME */
+.stSelectbox > div > div {
+  background: var(--bg-light) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px !important;
+  color: #FFFFFF !important;
+}
+
+.stSelectbox select {
+  background: var(--bg-light) !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  padding: 12px !important;
+}
+
+/* Dropdown menu options styling - ENHANCED */
+.stSelectbox select option {
+  background: var(--bg-light) !important;
+  color: #FFFFFF !important;
+  padding: 8px 12px !important;
+}
+
+.stSelectbox select option:hover {
+  background: var(--bg-dark) !important;
+  color: #FFFFFF !important;
+}
+
+.stSelectbox select option:selected {
+  background: var(--accent-color) !important;
+  color: #FFFFFF !important;
+}
+
+/* Modern Select Box Styling - ENHANCED */
+div[data-baseweb="select"] {
+  background: var(--bg-light) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px !important;
+}
+
+div[data-baseweb="select"] > div {
+  background: var(--bg-light) !important;
+  color: #FFFFFF !important;
+  border: none !important;
+}
+
+/* Select box input field */
+div[data-baseweb="select"] input {
+  background: transparent !important;
+  color: #FFFFFF !important;
+}
+
+/* Select box dropdown arrow */
+div[data-baseweb="select"] svg {
+  fill: #FFFFFF !important;
+}
+
+/* Dropdown menu container - ENHANCED */
+div[data-baseweb="popover"] {
+  background: var(--bg-light) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Dropdown menu options - ENHANCED */
+div[data-baseweb="menu"] {
+  background: var(--bg-light) !important;
+  border-radius: 8px !important;
+}
+
+div[data-baseweb="menu"] li {
+  background: var(--bg-light) !important;
+  color: #FFFFFF !important;
+  padding: 12px 16px !important;
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
+div[data-baseweb="menu"] li:hover {
+  background: var(--bg-dark) !important;
+  color: #FFFFFF !important;
+}
+
+div[data-baseweb="menu"] li[aria-selected="true"] {
+  background: var(--accent-color) !important;
+  color: #FFFFFF !important;
+}
+
+/* Additional dropdown fixes for all select elements - ENHANCED */
+select {
+  background: var(--bg-light) !important;
+  color: #FFFFFF !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px !important;
+  padding: 12px !important;
+}
+
+select option {
+  background: var(--bg-light) !important;
+  color: #FFFFFF !important;
+  padding: 8px 12px !important;
+}
+
+select option:hover {
+  background: var(--bg-dark) !important;
+  color: #FFFFFF !important;
+}
+
+select option:checked {
+  background: var(--accent-color) !important;
+  color: #FFFFFF !important;
+}
+
+/* Additional fallback selectors for dropdown menus */
+.stSelectbox div[role="listbox"] {
+  background: var(--bg-light) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px !important;
+}
+
+.stSelectbox div[role="option"] {
+  background: var(--bg-light) !important;
+  color: #FFFFFF !important;
+  padding: 12px 16px !important;
+}
+
+.stSelectbox div[role="option"]:hover {
+  background: var(--bg-dark) !important;
+  color: #FFFFFF !important;
+}
+
+/* Fix for Streamlit's internal dropdown styling */
+.st-selectbox-option {
+  background: var(--bg-light) !important;
+  color: #FFFFFF !important;
+}
+
+.st-selectbox-option:hover {
+  background: var(--bg-dark) !important;
+  color: #FFFFFF !important;
+}
+
+/* Universal dropdown option fix */
+option {
+  background: var(--bg-light) !important;
+  color: #FFFFFF !important;
+}
+
+/* Multiselect - UPDATED FOR DARK BACKGROUND */
+.stMultiSelect > div > div {
+  background: var(--bg-light) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px !important;
+  color: #FFFFFF !important;
+}
+
+.stMultiSelect select {
+  background: var(--bg-light) !important;
+  color: #FFFFFF !important;
+}
+
+.stMultiSelect select option {
+  background: var(--bg-light) !important;
+  color: #FFFFFF !important;
+  padding: 8px 12px !important;
+}
+
+.stMultiSelect select option:hover {
+  background: var(--bg-dark) !important;
+}
+
+.stMultiSelect select option:selected {
+  background: var(--accent-color) !important;
+}
+
+/* Multi-select tags styling */
+div[data-baseweb="tag"] {
+  background: var(--accent-color) !important;
+  color: #FFFFFF !important;
+  border: none !important;
+}
+
+div[data-baseweb="tag"] span {
+  color: #FFFFFF !important;
+}
+
+/* Multi-select close button */
+div[data-baseweb="tag"] button {
+  color: #FFFFFF !important;
+}
+
+/* Streamlit Password Input Styles - UPDATED */
+div[data-baseweb="base-input"] {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+div[data-baseweb="input"] {
+  position: relative !important;
+  background: var(--bg-light) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px !important;
+  margin: 8px 0 !important;
+  padding: 0 !important;
+}
+
+div[data-baseweb="input"] input {
+  background: var(--bg-light) !important;
+  border: none !important;
+  color: #FFFFFF !important;
+  font-size: 14px !important;
+  padding: 12px !important;
+  height: 45px !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  outline: none !important;
+}
+
+/* Remove all focus outlines */
+div[data-baseweb="input"]:focus,
+div[data-baseweb="input"] input:focus,
+div[data-baseweb="input"] div:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Single focus border on container */
+div[data-baseweb="input"]:focus-within {
+  border-color: var(--accent-color) !important;
+  box-shadow: 0 0 0 1px var(--accent-color) !important;
+}
+
+/* Password Eye Icon */
+div[data-baseweb="input"] button {
+  position: absolute !important;
+  right: 12px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  background: none !important;
+  border: none !important;
+  padding: 4px !important;
+  color: var(--text-secondary) !important;
+  cursor: pointer !important;
+  z-index: 2 !important;
+  height: auto !important;
+  min-height: auto !important;
+  width: auto !important;
+  min-width: auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Eye Icon Hover */
+div[data-baseweb="input"] button:hover,
+div[data-baseweb="input"] button:focus {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: var(--accent-color) !important;
+}
+
+/* Remove any inner containers/wrappers styling */
+div[data-baseweb="input"] > div {
+  border: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Admin Login Section */
+.stExpander {
+  background: var(--bg-dark);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  margin: 10px 0;
+  padding: 15px;
+}
+
+.stExpander .stButton > button {
+  width: 100%;
+  margin: 10px 0 5px 0;
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  height: 45px;
+}
+
+.stExpander .stButton > button:hover {
+  background: var(--accent-color-dark);
+}
+
+/* File Uploader */
+.stFileUploader {
+  background: var(--bg-light);
+  border: 2px dashed var(--border-color);
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.stFileUploader:hover {
+  border-color: var(--accent-color);
+}
+
+/* Metrics */
+.stMetric {
+  background: var(--bg-light);
+  padding: 1rem;
+  border-radius: 10px;
+  border-left: 4px solid var(--accent-color);
+}
+
+.stMetric:hover {
+  transform: translateX(5px);
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+  color: #FFFFFF;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+h1 {
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Progress Bars */
+.stProgress > div > div {
+  background-color: var(--accent-color);
+}
+
+/* Expander */
+.streamlit-expanderHeader {
+  background: var(--bg-light);
+  border: none;
+  border-radius: 8px;
+}
+
+/* Plotly Charts */
+.js-plotly-plot {
+  background: var(--bg-dark) !important;
+}
+
+/* Custom Components */
+.feature-card {
+  background: var(--bg-light);
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+  color: #FFFFFF;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  border-color: var(--accent-color);
+}
+
+.resume-template {
+  background: var(--bg-light);
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 0.5rem;
+  border: 2px solid var(--border-color);
+  transition: all 0.3s ease;
+  color: #FFFFFF;
+}
+
+.resume-template:hover {
+  border-color: var(--accent-color);
+  transform: scale(1.02);
+}
+
+/* Feedback Section */
+.feedback-card {
+  background: var(--bg-light);
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+  color: #FFFFFF;
+}
+
+.feedback-card:hover {
+  transform: translateX(5px);
+  border-color: var(--accent-color);
+}
+
+/* About Section */
+.about-container {
+  background: linear-gradient(135deg, var(--bg-light) 0%, var(--bg-dark) 100%);
+  border-radius: 20px;
+  padding: 2rem;
+  margin: 2rem 0;
+  position: relative;
+  overflow: hidden;
+  color: #FFFFFF;
+}
+
+.about-container::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(0,180,219,0.1) 0%, transparent 70%);
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-darker);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-color);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* Role card styling */
+.role-card {
+  background: var(--bg-dark);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+  color: #FFFFFF;
+}
+
+.role-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.role-card h3 {
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+}
+
+/* Skills tag styling */
+.skill-tag {
+  display: inline-block;
+  background: rgba(0, 180, 219, 0.2);
+  color: #FFFFFF;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  margin: 0.25rem;
+  font-size: 0.875rem;
+}
+
+/* Template preview styling */
+.template-preview {
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: var(--bg-light);
+  color: #FFFFFF;
+}
+
+.template-preview:hover {
+  border-color: var(--accent-color);
+  box-shadow: 0 2px 8px rgba(0, 180, 219, 0.2);
+}
+
+.template-preview.selected {
+  border-color: var(--accent-color);
+  background: rgba(0, 180, 219, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main {
+    padding: 1rem;
+  }
+  
+  .stcard {
+    padding: 1rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Glass morphism effects */
+.glass-card {
+  background: rgba(45, 45, 45, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  color: #FFFFFF;
+}
+
+/* Enhanced feedback section */
+.feedback-container {
+  background: var(--bg-light);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+  color: #FFFFFF;
+}
+
+/* About page enhancements */
+.about-section {
+  position: relative;
+  padding: 3rem;
+  background: var(--bg-light);
+  border-radius: 20px;
+  overflow: hidden;
+  color: #FFFFFF;
+}
+
+.about-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%);
+  animation: rotate 20s linear infinite;
+  z-index: 0;
+}
+
+/* Resume builder enhancements */
+.template-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.template-card {
+  background: var(--bg-dark);
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  color: #FFFFFF;
+}
+
+.template-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 180, 219, 0.2);
+}
+
+.template-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--primary-gradient);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.template-card:hover::after {
+  transform: scaleX(1);
+}
+
+/* Resume analyzer enhancements */
+.analysis-section {
+  background: var(--bg-light);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  color: #FFFFFF;
+}
+
+.metric-card {
+  background: var(--bg-dark);
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border-left: 4px solid var(--accent-color);
+  color: #FFFFFF;
+}
+
+.metric-card:hover {
+  transform: translateX(5px);
+  box-shadow: 0 6px 12px rgba(0, 180, 219, 0.15);
+}
+
+/* Loading animations */
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  border-top-color: var(--accent-color);
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Enhanced progress bars */
+.progress-container {
+  background: var(--bg-light);
+  border-radius: 10px;
+  padding: 0.5rem;
+  margin: 1rem 0;
+}
+
+.progress-bar {
+  height: 8px;
+  background: var(--primary-gradient);
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+/* Modern Card Styles */
+.card {
+  background: var(--bg-dark);
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  color: #FFFFFF;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-gradient);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 0;
+}
+
+.card:hover::before {
+  opacity: 0.05;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  border-color: var(--accent-color);
+}
+
+/* Modern Input Fields - UPDATED FOR DARK BACKGROUND */
+.modern-input {
+  background: var(--bg-light) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px !important;
+  padding: 0.75rem 1rem !important;
+  color: #FFFFFF !important;
+  transition: all 0.3s ease !important;
+}
+
+.modern-input:focus {
+  border-color: var(--accent-color) !important;
+  box-shadow: 0 0 0 2px rgba(0, 180, 219, 0.2) !important;
+  background: var(--bg-light) !important;
+}
+
+/* Modern Button Styles */
+.modern-button {
+  background: var(--primary-gradient);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.modern-button::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: 0.5s;
+}
+
+.modern-button:hover::after {
+  left: 100%;
+}
+
+/* Hero Header Styles */
+.hero-header {
+  position: relative;
+  padding: 4rem 2rem;
+  margin-bottom: 3rem;
+  border-radius: 16px;
+  background: linear-gradient(135deg,
+    rgba(0, 180, 219, 0.15) 0%,
+    rgba(0, 131, 176, 0.15) 100%
+  );
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hero-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg,
+    rgba(0, 180, 219, 0.2) 0%,
+    rgba(0, 131, 176, 0.1) 25%,
+    rgba(0, 180, 219, 0.2) 50%,
+    rgba(0, 131, 176, 0.1) 75%,
+    rgba(0, 180, 219, 0.2) 100%
+  );
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  z-index: 0;
+}
+
+.header-title {
+  position: relative;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin-bottom: 1rem;
+  animation: fadeInUp 0.8s ease;
+}
+
+.header-subtitle {
+  position: relative;
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+  animation: fadeInUp 1s ease;
+}
+
+.hero-header .header-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  background: linear-gradient(45deg, #00B4DB, #0083b0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.5rem;
+}
+
+.hero-header .header-subtitle {
+  font-size: 1.8rem;
+  color: #FFFFFF;
+  line-height: 1.4;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Universal Text Visibility Fix */
+* {
+  color: inherit;
+}
+
+/* Ensure Streamlit components have proper text color */
+.stMarkdown, .stText, .stCode, .stJson {
+  color: #FFFFFF !important;
+}
+
+/* Fix any remaining dark text */
+p, span, div, label {
+  color: #FFFFFF;
+}
+
+/* Exception for buttons that should keep their styling */
+.stButton > button {
+  color: white;
+}
+
+/* Additional Input Field Fixes */
+input[type="text"], 
+input[type="email"], 
+input[type="password"], 
+input[type="number"], 
+textarea, 
+select {
+  background: var(--bg-light) !important;
+  color: #FFFFFF !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px !important;
+  padding: 12px !important;
+}
+
+input[type="text"]:focus, 
+input[type="email"]:focus, 
+input[type="password"]:focus, 
+input[type="number"]:focus, 
+textarea:focus, 
+select:focus {
+  background: var(--bg-light) !important;
+  border-color: var(--accent-color) !important;
+  box-shadow: 0 0 0 2px rgba(0, 180, 219, 0.2) !important;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
